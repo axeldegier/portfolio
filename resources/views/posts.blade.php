@@ -1,13 +1,19 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>Homepage</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-<body> -->
-@extends('layouts.app')
 
+@extends('layout')
+@section('title')
 @section('content')
+	
+
+
+	<main id="main">
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+	<div class="section-title">
+	  <h2>portfolio</h2>
+	  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+	</div>
 	<div class="container">
 		
 		<br><br>
@@ -19,12 +25,19 @@
 					<span>{{ $post->title }}</span>
 					<br> <br>
 					<span>{{ $post->excerpt }}</span>
+					
 				</a>
+				
 			</div>
+	
 		@endforeach
 
 
 		
 		</div>
 	</div>
+  </div>
+</section><!-- End Portfolio Section -->
+
+</main><!-- End #main -->
 	@endsection

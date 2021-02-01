@@ -32,7 +32,7 @@ Route::get('/contact', function () {
     return view('contact');
  });
  Route::get('/overons', function () {
-    return view('contact');
+    return view('overons');
  });
  Route::get('/layouts/app', function () {
     return view('login');

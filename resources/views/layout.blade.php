@@ -4,6 +4,9 @@
        <title>@yield('title', 'Laravel pagina')</title>
        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
        <meta charset="utf-8">
+      
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
 <!-- 
     <title>{{ config('app.name', 'Laravel') }}</title> -->
 
@@ -16,29 +19,116 @@
 
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
+
+<link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('vendor/icofont/icofont.min.css') }}" rel="stylesheet">
+<link href="{{ asset('vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+<link href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+<link href="{{ asset('vendor/venobox/venobox.css') }}" rel="stylesheet">
+<link href="{{ asset('vendor/aos/aos.csss') }}" rel="stylesheet">
+
+
+
    </head>
    
    <body>
-   <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-  <a class="navbar-brand" href="/">Portfolio</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-           <li class="nav-item active"><a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></li>
-           <li class="nav-item active"><a class="nav-link" href="/posts">Posts</a></li>
-           <li class="nav-item active"><a class="nav-link" href="/overons">Over ons</a></li>
-           <li class="nav-item active"><a class="nav-link" href="/contact">Contact</a></li>
-           <li class="nav-item active"><a class="nav-link" href="/admin">Admin</a></li>
-           <li class="nav-item active"><a class="nav-link" href="/login">login</a></li>
-           
-       </ul>
-    <span class="navbar-text">
-      Axel
-    </span>
-  </div>
-</nav>
+   <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo"><a class="nav-link" href="/">Axel   <span class="sr-only">(current)</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="nav-item active"><a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item active"><a class="nav-link" href="/posts">Posts</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/overons">About</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/contact">Contact</a></li>
+          <li class="nav-item active"><a class="nav-link" href="/admin">Admin</a></li>
+          <!-- <li class="nav-item active"><a class="nav-link" href="/login">login</a></li> -->
+
+          
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="header-social-links">
+      <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li> -->
+                            @if (Route::has('register'))
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li> -->
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                    <a class="" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('- Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
+                </div>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+  
+
 @yield('content')
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Axel</span></strong>. All Rights Reserved
+        
+      </div>
+    </div>
+    <div class="header-social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+  </footer><!-- End  Footer -->
+
+ 
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <script src="{{ asset('vendor/jquery/jquery.min.js') }}" defer></script>
+  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
+  <script src="{{ asset('vendor/jquery.easing/jquery.easing.min.js') }}" defer></script>
+
+  <script src="{{ asset('vendor/waypoints/jquery.waypoints.min.js') }}" defer></script>
+  <script src="{{ asset('vendor/counterup/counterup.min.js') }}" defer></script>
+  <script src="{{ asset('vendor/owl.carousel/owl.carousel.min.js') }}" defer></script>
+  <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}" defer></script>
+  <script src="{{ asset('vendor/venobox/venobox.min.js') }}" defer></script>
+ 
+
+   <!-- Vendor JS Files -->
+ 
+
+  <!-- Template Main JS File -->
+  <script src="{{ asset('js/main.js') }}" defer></script>
+  
+  
    </body>
 </html>
