@@ -17,6 +17,7 @@
 				<h1>{{ $post->title }}</h1>
 				<img src="{{ Voyager::image( $post->image ) }}" style="width:100%">
 				<p>{!! $post->body !!}</p>
+				
 
 			</div>
 		</div>
