@@ -26,5 +26,7 @@ week<br />
 
 Portolio
 
-Dit is mijn portfolio voor web. mijn portfolio is opgebouwt met laravel.
+Dit is mijn portfolio voor web. mijn portfolio is opgebouwt met laravel.<br />
+hierin staan projecten die ik afgelopen jaar heb gemaakt<br />
+[Link](http://timeless.gluweb.nl/portfo/public/)
 
