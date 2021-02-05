@@ -30,3 +30,11 @@ Dit is mijn portfolio voor web. mijn portfolio is opgebouwt met laravel.<br />
 hierin staan projecten die ik afgelopen jaar heb gemaakt<br />
 [Portofolio](http://timeless.gluweb.nl/portfo/public/)
 
+
+voor de instalatie:
+
+1. npm install
+2. composer install
+3. php artisan voyager:install
+4. php artisan migrate
+

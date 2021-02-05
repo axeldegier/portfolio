@@ -20,7 +20,6 @@
    
     <div class="section-title">
       <h2>Contact </h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
     </div>
 
     <div>
@@ -35,19 +34,19 @@
           <div class="address">
             <i class="icofont-google-map"></i>
             <h4>Location:</h4>
-            <p></p>
+            <p>Deil</p>
           </div>
 
           <div class="email">
             <i class="icofont-envelope"></i>
             <h4>Email:</h4>
-            <p></p>
+            <p>Axeldegier@outlook.com</p>
           </div>
 
           <div class="phone">
             <i class="icofont-phone"></i>
             <h4>Phonenumber:</h4>
-            <p></p>
+            <p>06 38115877</p>
           </div>
 
         </div>
