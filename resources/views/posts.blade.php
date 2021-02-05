@@ -19,7 +19,7 @@
 		<br><br>
 		<div class="row">
 		@foreach($posts as $post)
-			<div class="col-md-3">
+			<!-- <div class="col-md-3">
 				<a href="/post/{{ $post->slug }}">
 					<img src="{{ Voyager::image( $post->image ) }}" style="width:100%">
 					<span>{{ $post->title }}</span>
@@ -28,7 +28,16 @@
 					
 				</a>
 				
-			</div>
+			</div> -->
+
+			<div class="card mr-3" style="width: 16rem;">
+  <img class="card-img-top" src="{{ Voyager::image( $post->image ) }}" alt="posts" style="width:100%">
+  <div class="card-body">
+    <h5 class="card-title">{{ $post->title }}</h5>
+    <p class="card-text">{{ $post->excerpt }}.</p>
+    <a href="/post/{{ $post->slug }}" class="btn background-color-btn">Details</a>
+  </div>
+</div>
 	
 		@endforeach
 
@@ -37,7 +46,7 @@
 		</div>
 	</div>
   </div>
-</section><!-- End Portfolio Section -->
+</section>
 
-</main><!-- End #main -->
+</main>
 	@endsection

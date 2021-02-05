@@ -7,17 +7,12 @@
       
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<!-- 
-    <title>{{ config('app.name', 'Laravel') }}</title> -->
-
-    <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://kit.fontawesome.com/e9ffd00ef3.js" crossorigin="anonymous"></script>
 
-    <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
@@ -27,7 +22,6 @@
 <link href="{{ asset('vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 <link href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
 <link href="{{ asset('vendor/venobox/venobox.css') }}" rel="stylesheet">
-<link href="{{ asset('vendor/aos/aos.csss') }}" rel="stylesheet">
 
 
 
@@ -38,8 +32,7 @@
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
       <h1 class="logo"><a class="nav-link" href="/">Axel   <span class="sr-only">(current)</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+     
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -52,7 +45,7 @@
 
           
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
 
       <div class="header-social-links">
       <ul class="navbar-nav ml-auto">
@@ -90,11 +83,11 @@
 
     </div>
 
-  </header><!-- End Header -->
+  </header>
   
 
 @yield('content')
-  <!-- ======= Footer ======= -->
+ 
   <footer id="footer">
     <div class="container">
       <div class="copyright">
@@ -103,12 +96,11 @@
       </div>
     </div>
     <div class="header-social-links">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+ 
+        <a href="https://github.com/axeldegier/" class="linkedin"><i class="fab fa-github"></i>
       </div>
-  </footer><!-- End  Footer -->
+      
+  </footer>
 
  
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
@@ -123,10 +115,6 @@
   <script src="{{ asset('vendor/venobox/venobox.min.js') }}" defer></script>
  
 
-   <!-- Vendor JS Files -->
- 
-
-  <!-- Template Main JS File -->
   <script src="{{ asset('js/main.js') }}" defer></script>
   
   

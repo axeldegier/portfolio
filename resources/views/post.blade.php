@@ -22,7 +22,7 @@
 			</div>
 		</div>
 	</div>
-	</section><!-- End Hero -->
-	</main><!-- End #main -->
+	</section>
+	</main>
     
     @endsection
