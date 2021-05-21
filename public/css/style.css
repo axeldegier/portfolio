@@ -2,7 +2,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
+html {
+  scroll-behavior: smooth;
+ }
 a {
   color: pink;
 }
@@ -387,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../storage/posts/post1.jpg") top right;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../storage/posts/post1.jpg") top right;
   background-size: cover;
 }
 
@@ -434,6 +436,29 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-about:hover {
   background: plum;
 }
+
+
+.btn-details{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: pink;
+}
+
+.btn-details:hover {
+  background: plum;
+  color: white;
+  text-decoration: none;
+}
+
 
 @media (min-width: 1024px) {
   #hero {

@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/posts', function () {
+Route::get('/', function () {
    $posts = App\Post::all();
    return view('posts', compact('posts'));
 });

@@ -25,17 +25,17 @@
           <div class="address">
             <i class="icofont-google-map"></i>
             <h4>Location:</h4>
-            <p>Deil</p>
+            <p>Utrecht</p>
           </div>
 
           <div class="email">
-            <i class="icofont-envelope"></i>
+           <a href = "mailto: Axeldegier@outlook.com"> <i class="icofont-envelope"></i></a>
             <h4>Email:</h4>
             <p>Axeldegier@outlook.com</p>
           </div>
 
           <div class="phone">
-            <i class="icofont-phone"></i>
+          <a href="callto:5551234567"> <i class="icofont-phone"></i> </a>
             <h4>Phonenumber:</h4>
             <p>06 38115877</p>
           </div>

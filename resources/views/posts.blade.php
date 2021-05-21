@@ -6,6 +6,18 @@
 
 
 	<main id="main">
+	<section id="hero" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Axel de Gier</h1>
+      <h2>I'm a Web Developer</h2>
+      
+      <a class="nav-link btn-about" href="#portfolio">Projects</a>
+    </div>
+  </section>
+
+
+
+
 
 <!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
@@ -35,7 +47,7 @@
   <div class="card-body">
     <h5 class="card-title">{{ $post->title }}</h5>
     <p class="card-text">{{ $post->excerpt }}.</p>
-    <a href="/post/{{ $post->slug }}" class="btn background-color-btn">Details</a>
+    <a href="/post/{{ $post->slug }}" class="btn-details">Details</a>
   </div>
 </div>
 	

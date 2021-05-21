@@ -4,7 +4,7 @@
        <title>@yield('title', 'Laravel pagina')</title>
        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
        <meta charset="utf-8">
-       <link rel="shortcut icon" href="http://localhost/Portfolio/public/storage/posts/favicon-A-1.png" type="image/x-icon">  
+
   <meta charset="UTF-8">
   <meta name="description" content="A web portfolio with my best projects">
   <meta name="keywords" content="HTML, CSS, JavaScript, Laravel">
